@@ -1,0 +1,121 @@
+.page { display: none; } 
+
+.page.active { 
+			display: block;
+			margin: 20px;  /*Abstand linke Seite*/
+}
+
+html,
+body {
+	min-height: 100vh;
+}
+
+body {
+	font-family: "inter", Arial, sans-serif;
+	background: linear-gradient(145deg, #1e90ff, #afeeee); /*Farbverlauf (Richtung; Farbe1; Farbe2)*/
+	margin: 0;
+	padding: 0;
+	color: #000000; /*Farbe von Text zb schwarz*/
+}
+
+/*BOX*/
+#app {
+	max-width: 700px; /*länge*/
+	max-width: calc(100%-40%);
+	margin: 40px auto; 
+	padding: 25px; /*Größe Box*/
+	background: lightyellow; /* Boxfarbe*/
+	border-radius: 30px; /*Ecken*/
+	box-shadow: 0 20px 10px rgba(0, 0, 0, 0.08); /*Größe; Stärke*/
+}
+
+h1 {
+	margin-top: 0px;
+	color: darkblue;
+	text-align: center;
+}
+
+h2 {
+	margin-top: 0px;
+	color: #4169E1;
+}
+
+
+/*ID*/
+input[type="text"] {
+	padding: 5px; /*dicke*/
+	width: 200px; /*länge*/
+	border-radius: 10px; /*Ecken*/
+	border: 5px solid darkblue; /*dicke von rand & farbe*/
+	margin-bottom: 10px;
+	font-size: 14px; /*Schriftgröße: ID*/
+	transition: 0.3s;
+}
+
+/*Auf ID klickt*/
+input[type="text"]:focus {
+	border-color: darkblue;
+	outline: none;
+}
+
+
+/*Antworten-Box*/
+label {
+	display: block;
+	padding: 8px; /*dicke von box*/
+	margin: 0.05px 10px; /*Abstand zw. boxen*/
+	background: white;
+	border: 4px solid lightgray; /*dicke von rand & farbe*/
+	border-radius: 20px; /*Ecken*/
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+/*Maus über Antwort-Box*/
+label:hover{
+	background: lightgray;
+	border-color: #4169E1;
+}
+
+
+/*Button von Antworten-Box*/
+input[type="radio"] {
+	transform: scale(1.5); /*Radius von Kreis*/
+	margin-right: 4px; /*Abstand zw. Kreis und Text*/
+}
+
+button {
+	padding: 3px 15px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+/*Button: Weiter*/
+.next {
+	display: block;
+	margin-left:auto;
+}
+
+.next.start {
+    margin-left: 0;
+}
+
+/*Frage 3*/
+#waist-options label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/*Ergebnistext*/
+#result p {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+/*Ergebniszahl*/
+#score {
+	font-weight:bold;
+}
+
+/*Fehlermeldung*/
+.error { color: red; }
